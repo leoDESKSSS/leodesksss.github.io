@@ -24,22 +24,22 @@
     var CONFIG = {"hostname":"leodesksss.github.io","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="Git配置1.git config &#x2F;etc&#x2F;gitconfig文件 系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。  ~&#x2F;.gitconfig文件 用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。  Git是分布式的版本控制系统，每个机器都必须自报家门：你的名字和E">
+  <meta name="description" content="hexo搭建博客前提已经搭建好github主页：username.github.io 环境配置 hexo文档：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;  所需软件：  Git hexo node.js      安装Git  安装node.js  官网： http:&#x2F;&#x2F;nodejs.cn&#x2F;  下载：http:&#x2F;&#x2F;nodejs.cn&#x2F;download&#x2F;  将nodejs添加到环境变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git学习">
-<meta property="og:url" content="https://leodesksss.github.io/2020/10/23/Git%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="搭建hexo博客">
+<meta property="og:url" content="https://leodesksss.github.io/2020/10/29/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="llleo的小站">
-<meta property="og:description" content="Git配置1.git config &#x2F;etc&#x2F;gitconfig文件 系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。  ~&#x2F;.gitconfig文件 用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。  Git是分布式的版本控制系统，每个机器都必须自报家门：你的名字和E">
+<meta property="og:description" content="hexo搭建博客前提已经搭建好github主页：username.github.io 环境配置 hexo文档：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;  所需软件：  Git hexo node.js      安装Git  安装node.js  官网： http:&#x2F;&#x2F;nodejs.cn&#x2F;  下载：http:&#x2F;&#x2F;nodejs.cn&#x2F;download&#x2F;  将nodejs添加到环境变量">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-23T02:47:29.000Z">
-<meta property="article:modified_time" content="2020-10-23T02:49:12.500Z">
+<meta property="article:published_time" content="2020-10-28T16:48:10.000Z">
+<meta property="article:modified_time" content="2020-10-28T16:56:32.853Z">
 <meta property="article:author" content="llleo">
-<meta property="article:tag" content="Git">
-<meta property="article:tag" content="学习">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://leodesksss.github.io/2020/10/23/Git%E5%AD%A6%E4%B9%A0/">
+<link rel="canonical" href="https://leodesksss.github.io/2020/10/29/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">
 
 
 <script class="page-configurations">
@@ -52,7 +52,7 @@
   };
 </script>
 
-  <title>Git学习 | llleo的小站</title>
+  <title>搭建hexo博客 | llleo的小站</title>
   
 
 
@@ -170,7 +170,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">Git配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-git-config"><span class="nav-number">1.1.</span> <span class="nav-text">1.git config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%9F%A5%E7%9C%8B%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.</span> <span class="nav-text">2.查看配置信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93-%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">2.</span> <span class="nav-text">创建仓库(版本库)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%8A%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">把文件添加到版本库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">5.</span> <span class="nav-text">远程仓库</span></a></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.</span> <span class="nav-text">hexo搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%8F%90"><span class="nav-number">1.1.</span> <span class="nav-text">前提</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">1.2.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E6%9C%BA%E8%AF%95%E7%94%A8%E5%AE%98%E6%96%B9%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.3.</span> <span class="nav-text">本机试用官方博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E6%9C%AC%E6%9C%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="nav-number">1.4.</span> <span class="nav-text">将本机博客部署到github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E6%8F%90%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%BA%86github-page"><span class="nav-number">1.4.1.</span> <span class="nav-text">前提已经有了github page</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">修改主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#next%E4%B8%BB%E9%A2%98"><span class="nav-number">1.5.1.</span> <span class="nav-text">next主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A1%B5"><span class="nav-number">1.6.</span> <span class="nav-text">配置主页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%A4%B4%E5%83%8F"><span class="nav-number">1.7.</span> <span class="nav-text">修改头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%8A%9F%E8%83%BD"><span class="nav-number">1.8.</span> <span class="nav-text">添加功能</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -246,7 +246,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://leodesksss.github.io/2020/10/23/Git%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="https://leodesksss.github.io/2020/10/29/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/touxiang.gif">
@@ -259,7 +259,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git学习
+          搭建hexo博客
         </h1>
 
         <div class="post-meta-container">
@@ -271,7 +271,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-10-23 10:47:29 / 修改时间：10:49:12" itemprop="dateCreated datePublished" datetime="2020-10-23T10:47:29+08:00">2020-10-23</time>
+      <time title="创建时间：2020-10-29 00:48:10 / 修改时间：00:56:32" itemprop="dateCreated datePublished" datetime="2020-10-29T00:48:10+08:00">2020-10-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -279,7 +279,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Git%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">Git学习</span></a>
+          <a href="/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">搭建博客</span></a>
         </span>
     </span>
 
@@ -293,43 +293,78 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><h2 id="1-git-config"><a href="#1-git-config" class="headerlink" title="1.git config"></a>1.git config</h2><ol>
-<li>/etc/gitconfig文件 系统中对所有用户都普遍适用的配置。若使用 git config 时用 <strong>–system</strong> 选项，读写的就是这个文件。 </li>
-<li>~/.gitconfig文件 用户目录下的配置文件只适用于该用户。若使用 git config 时用 <strong>–global</strong> 选项，读写的就是这个文件。</li>
-</ol>
-<p>Git是分布式的版本控制系统，每个机器都必须自报家门：你的名字和Email地址<br><code>git config --global user.name &quot;runoob&quot;</code><br><code>git config --global user.email test@runoob.com</code></p>
-<h2 id="2-查看配置信息"><a href="#2-查看配置信息" class="headerlink" title="2.查看配置信息"></a>2.查看配置信息</h2><p><code>git config --list</code></p>
+        <h1 id="hexo搭建博客"><a href="#hexo搭建博客" class="headerlink" title="hexo搭建博客"></a>hexo搭建博客</h1><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><pre><code>已经搭建好github主页：username.github.io</code></pre>
+<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><ul>
+<li><p>hexo文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+</li>
+<li><p>所需软件：</p>
 <ul>
-<li>user.name=lleo</li>
-<li>user.email=leodesksss@nit.zju.edu.cn</li>
+<li>Git</li>
+<li>hexo<ul>
+<li>node.js </li>
 </ul>
-<p><code>more ~/.gitconfig</code></p>
-<p>[gui]<br>            recentrepo = C:/Users/leo/Documents<br>[user]<br>        name = lleo<br>        email = <a href="mailto:&#108;&#x65;&#x6f;&#100;&#101;&#x73;&#107;&#x73;&#115;&#x73;&#x40;&#110;&#x69;&#116;&#x2e;&#122;&#106;&#117;&#46;&#101;&#x64;&#x75;&#46;&#99;&#x6e;">&#108;&#x65;&#x6f;&#100;&#101;&#x73;&#107;&#x73;&#115;&#x73;&#x40;&#110;&#x69;&#116;&#x2e;&#122;&#106;&#117;&#46;&#101;&#x64;&#x75;&#46;&#99;&#x6e;</a></p>
-<h1 id="创建仓库-版本库"><a href="#创建仓库-版本库" class="headerlink" title="创建仓库(版本库)"></a>创建仓库(版本库)</h1><p>初始化 ：<br><code>git init</code><br>查看.git目录<br><code>ls -ah</code>  </p>
-<h1 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h1><ol>
-<li><code>git add &#123;FileName&#125;</code>  添加文件（单个）<br><code>git add README.md</code>  </li>
-<li><code>git commit -m &quot;comment&quot;</code>  提交文件（多个）</li>
-<li><code>git status</code>  查看当前状态，有哪些文件被挂起待提交</li>
-<li><code>git diff</code>  查看当前修改</li>
-<li><code>git log</code>  以当前版本为HEAD查看之前版本号</li>
-<li><code>git reset --hard &#123;commit_ID&#125;</code>  回到某个版本</li>
-<li><code>git reflog</code>   查看之前的操作，以及所有的版本号</li>
-</ol>
+</li>
+</ul>
+</li>
+<li><p>安装Git</p>
+</li>
+<li><p>安装node.js  官网： <a target="_blank" rel="noopener" href="http://nodejs.cn/">http://nodejs.cn/</a>  下载：<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
 <ul>
-<li>git checkout  待学习 –撤销修改</li>
+<li>将nodejs添加到环境变量</li>
+<li>CMD里面输入<code>node</code>+回车不报错</li>
 </ul>
-<h1 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h1><p><code>git rm</code><br><code>rm</code><br>两者有区别    后者是修改 前者是从版本库中删除</p>
-<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><ol>
-<li>添加公钥到github   .ssh文件夹里面两个文件</li>
-<li>改变分支名字  master –&gt;  main<br><code>git branch -M main</code></li>
-<li>连接到远程仓库<br><code>git remote add origin https://github.com/leoDESKSSS/learngit.git</code></li>
-<li>上传本地仓库到github  默认远程仓库名字为origin<br><code>git push -u origin main</code></li>
-<li>克隆远程仓库<br><code>git clone git@github.com:leoDESKSSS/learngit2.git</code></li>
-</ol>
-<p>  <em>2020.10.17  23:37</em></p>
-<ol start="6">
-<li>删除远程仓库<br><code>git remote rm origin</code></li>
-</ol>
+</li>
+<li><p>安装hexo</p>
+<ul>
+<li><p>保证nodejs正确安装后在cmd里输入<br>  <code>npm install -g hexo-cli</code></p>
+</li>
+<li><p>安装完成后检查是否安装成功<br>   <code>hexo -v</code> 返回版本号则正确安装</p>
+</li>
+<li><p>初始化hexo 在磁盘中找一个位置<br>  <code>hexo init myblog</code> 其中myblog可以随便写<br>  <code>cd myblog</code> 进入到该文件夹<br>  <code>npm install</code> 完成后初始化成功</p>
+<p>ls命令查看目录 此目录之后称为根目录</p>
+</li>
+<li><p>node_modules: 依赖包</p>
+</li>
+<li><p>public：存放生成的页面</p>
+</li>
+<li><p>scaffolds：生成文章的一些模板</p>
+</li>
+<li><p>source：用来存放你的文章</p>
+</li>
+<li><p>themes：主题</p>
+<ul>
+<li>** _config.yml: 博客的配置文件**<h2 id="本机试用官方博客"><a href="#本机试用官方博客" class="headerlink" title="本机试用官方博客"></a>本机试用官方博客</h2></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在上面的根目录下打开cmd<br>  <code>hexo server</code> 默认情况下在4000端口</p>
+</li>
+<li><p>浏览器里输入localhost:4000查看博客</p>
+</li>
+<li><p>ctrl+c关闭服务</p>
+</li>
+</ul>
+<h2 id="将本机博客部署到github"><a href="#将本机博客部署到github" class="headerlink" title="将本机博客部署到github"></a>将本机博客部署到github</h2><h3 id="前提已经有了github-page"><a href="#前提已经有了github-page" class="headerlink" title="前提已经有了github page"></a>前提已经有了github page</h3><ul>
+<li><p>在根目录下找到_config.yml，该文档为hexo的配置文件，打开</p>
+</li>
+<li><p>在文档最后，更改代码，示例</p>
+<pre><code>deploy:
+type: git
+repo: git@github.com:username/username.github.io.git
+branch: main```
+
+  username是自己的账户名</code></pre>
+</li>
+<li><p>在cmd中加载部署模块<br><code>npm install hexo-deployer-git --save</code></p>
+</li>
+<li><p>上传到github<br><code>hexo deploy</code> 可缩写 <code>hexo d</code></p>
+</li>
+</ul>
+<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><h3 id="next主题"><a href="#next主题" class="headerlink" title="next主题"></a>next主题</h3><p><em>待补充</em></p>
+<h2 id="配置主页"><a href="#配置主页" class="headerlink" title="配置主页"></a>配置主页</h2><p><em>待补充</em></p>
+<h2 id="修改头像"><a href="#修改头像" class="headerlink" title="修改头像"></a>修改头像</h2><p><em>待补充</em></p>
+<h2 id="添加功能"><a href="#添加功能" class="headerlink" title="添加功能"></a>添加功能</h2><p><em>待补充</em></p>
 
     </div>
 
@@ -339,21 +374,21 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"># Git</a>
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+              <a href="/tags/blog/" rel="tag"># blog</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2020/10/16/%E5%AE%9E%E9%AA%8C2/" rel="prev" title="实验2">
-                  <i class="fa fa-chevron-left"></i> 实验2
+                <a href="/2020/10/23/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/" rel="prev" title="信号与系统">
+                  <i class="fa fa-chevron-left"></i> 信号与系统
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/10/23/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/" rel="next" title="信号与系统">
-                  信号与系统 <i class="fa fa-chevron-right"></i>
+                <a href="/2020/10/29/%E5%AE%9E%E9%AA%8C3/" rel="next" title="实验3">
+                  实验3 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

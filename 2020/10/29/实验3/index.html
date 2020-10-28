@@ -24,22 +24,21 @@
     var CONFIG = {"hostname":"leodesksss.github.io","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="Git配置1.git config &#x2F;etc&#x2F;gitconfig文件 系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。  ~&#x2F;.gitconfig文件 用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。  Git是分布式的版本控制系统，每个机器都必须自报家门：你的名字和E">
+  <meta name="description" content="作业要求：实验三报告，具体要求： 1，实现GUI，添加几个按钮； 2，按其中的一个按钮，显示出一个基本离散信号；每个离散信号，对应一个按钮； 3，在github上设计个人主页，内容要有逻辑有层次（可参考老师的个人主页：kingsone995.github.io）。要求主页面上是主页大纲；其中有“信号与系统实践环节”这个链接，链接进去后，是你每次的实验成果，具体请自行设计。把个人主页网址通过实验报告">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git学习">
-<meta property="og:url" content="https://leodesksss.github.io/2020/10/23/Git%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="实验3">
+<meta property="og:url" content="https://leodesksss.github.io/2020/10/29/%E5%AE%9E%E9%AA%8C3/index.html">
 <meta property="og:site_name" content="llleo的小站">
-<meta property="og:description" content="Git配置1.git config &#x2F;etc&#x2F;gitconfig文件 系统中对所有用户都普遍适用的配置。若使用 git config 时用 –system 选项，读写的就是这个文件。  ~&#x2F;.gitconfig文件 用户目录下的配置文件只适用于该用户。若使用 git config 时用 –global 选项，读写的就是这个文件。  Git是分布式的版本控制系统，每个机器都必须自报家门：你的名字和E">
+<meta property="og:description" content="作业要求：实验三报告，具体要求： 1，实现GUI，添加几个按钮； 2，按其中的一个按钮，显示出一个基本离散信号；每个离散信号，对应一个按钮； 3，在github上设计个人主页，内容要有逻辑有层次（可参考老师的个人主页：kingsone995.github.io）。要求主页面上是主页大纲；其中有“信号与系统实践环节”这个链接，链接进去后，是你每次的实验成果，具体请自行设计。把个人主页网址通过实验报告">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-23T02:47:29.000Z">
-<meta property="article:modified_time" content="2020-10-23T02:49:12.500Z">
+<meta property="article:published_time" content="2020-10-28T16:57:40.000Z">
+<meta property="article:modified_time" content="2020-10-28T16:59:19.239Z">
 <meta property="article:author" content="llleo">
-<meta property="article:tag" content="Git">
-<meta property="article:tag" content="学习">
+<meta property="article:tag" content="信号与系统实践环节">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://leodesksss.github.io/2020/10/23/Git%E5%AD%A6%E4%B9%A0/">
+<link rel="canonical" href="https://leodesksss.github.io/2020/10/29/%E5%AE%9E%E9%AA%8C3/">
 
 
 <script class="page-configurations">
@@ -52,7 +51,7 @@
   };
 </script>
 
-  <title>Git学习 | llleo的小站</title>
+  <title>实验3 | llleo的小站</title>
   
 
 
@@ -170,7 +169,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">Git配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-git-config"><span class="nav-number">1.1.</span> <span class="nav-text">1.git config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%9F%A5%E7%9C%8B%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.</span> <span class="nav-text">2.查看配置信息</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93-%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">2.</span> <span class="nav-text">创建仓库(版本库)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%8A%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">把文件添加到版本库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">5.</span> <span class="nav-text">远程仓库</span></a></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A%E8%A6%81%E6%B1%82%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">作业要求：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">实验报告：</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -246,7 +245,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://leodesksss.github.io/2020/10/23/Git%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="https://leodesksss.github.io/2020/10/29/%E5%AE%9E%E9%AA%8C3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/touxiang.gif">
@@ -259,7 +258,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git学习
+          实验3
         </h1>
 
         <div class="post-meta-container">
@@ -271,7 +270,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-10-23 10:47:29 / 修改时间：10:49:12" itemprop="dateCreated datePublished" datetime="2020-10-23T10:47:29+08:00">2020-10-23</time>
+      <time title="创建时间：2020-10-29 00:57:40 / 修改时间：00:59:19" itemprop="dateCreated datePublished" datetime="2020-10-29T00:57:40+08:00">2020-10-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -279,7 +278,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Git%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">Git学习</span></a>
+          <a href="/categories/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%E7%8E%AF%E8%8A%82/" itemprop="url" rel="index"><span itemprop="name">信号与系统实践环节</span></a>
         </span>
     </span>
 
@@ -293,43 +292,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><h2 id="1-git-config"><a href="#1-git-config" class="headerlink" title="1.git config"></a>1.git config</h2><ol>
-<li>/etc/gitconfig文件 系统中对所有用户都普遍适用的配置。若使用 git config 时用 <strong>–system</strong> 选项，读写的就是这个文件。 </li>
-<li>~/.gitconfig文件 用户目录下的配置文件只适用于该用户。若使用 git config 时用 <strong>–global</strong> 选项，读写的就是这个文件。</li>
-</ol>
-<p>Git是分布式的版本控制系统，每个机器都必须自报家门：你的名字和Email地址<br><code>git config --global user.name &quot;runoob&quot;</code><br><code>git config --global user.email test@runoob.com</code></p>
-<h2 id="2-查看配置信息"><a href="#2-查看配置信息" class="headerlink" title="2.查看配置信息"></a>2.查看配置信息</h2><p><code>git config --list</code></p>
-<ul>
-<li>user.name=lleo</li>
-<li>user.email=leodesksss@nit.zju.edu.cn</li>
-</ul>
-<p><code>more ~/.gitconfig</code></p>
-<p>[gui]<br>            recentrepo = C:/Users/leo/Documents<br>[user]<br>        name = lleo<br>        email = <a href="mailto:&#108;&#x65;&#x6f;&#100;&#101;&#x73;&#107;&#x73;&#115;&#x73;&#x40;&#110;&#x69;&#116;&#x2e;&#122;&#106;&#117;&#46;&#101;&#x64;&#x75;&#46;&#99;&#x6e;">&#108;&#x65;&#x6f;&#100;&#101;&#x73;&#107;&#x73;&#115;&#x73;&#x40;&#110;&#x69;&#116;&#x2e;&#122;&#106;&#117;&#46;&#101;&#x64;&#x75;&#46;&#99;&#x6e;</a></p>
-<h1 id="创建仓库-版本库"><a href="#创建仓库-版本库" class="headerlink" title="创建仓库(版本库)"></a>创建仓库(版本库)</h1><p>初始化 ：<br><code>git init</code><br>查看.git目录<br><code>ls -ah</code>  </p>
-<h1 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h1><ol>
-<li><code>git add &#123;FileName&#125;</code>  添加文件（单个）<br><code>git add README.md</code>  </li>
-<li><code>git commit -m &quot;comment&quot;</code>  提交文件（多个）</li>
-<li><code>git status</code>  查看当前状态，有哪些文件被挂起待提交</li>
-<li><code>git diff</code>  查看当前修改</li>
-<li><code>git log</code>  以当前版本为HEAD查看之前版本号</li>
-<li><code>git reset --hard &#123;commit_ID&#125;</code>  回到某个版本</li>
-<li><code>git reflog</code>   查看之前的操作，以及所有的版本号</li>
-</ol>
-<ul>
-<li>git checkout  待学习 –撤销修改</li>
-</ul>
-<h1 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h1><p><code>git rm</code><br><code>rm</code><br>两者有区别    后者是修改 前者是从版本库中删除</p>
-<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><ol>
-<li>添加公钥到github   .ssh文件夹里面两个文件</li>
-<li>改变分支名字  master –&gt;  main<br><code>git branch -M main</code></li>
-<li>连接到远程仓库<br><code>git remote add origin https://github.com/leoDESKSSS/learngit.git</code></li>
-<li>上传本地仓库到github  默认远程仓库名字为origin<br><code>git push -u origin main</code></li>
-<li>克隆远程仓库<br><code>git clone git@github.com:leoDESKSSS/learngit2.git</code></li>
-</ol>
-<p>  <em>2020.10.17  23:37</em></p>
-<ol start="6">
-<li>删除远程仓库<br><code>git remote rm origin</code></li>
-</ol>
+        <h3 id="作业要求："><a href="#作业要求：" class="headerlink" title="作业要求："></a>作业要求：</h3><p>实验三报告，具体要求：</p>
+<p>1，实现GUI，添加几个按钮；</p>
+<p>2，按其中的一个按钮，显示出一个基本离散信号；每个离散信号，对应一个按钮；</p>
+<p>3，在github上设计个人主页，内容要有逻辑有层次（可参考老师的个人主页：kingsone995.github.io）。要求主页面上是主页大纲；其中有“信号与系统实践环节”这个链接，链接进去后，是你每次的实验成果，具体请自行设计。把个人主页网址通过实验报告中提交。</p>
+<h3 id="实验报告："><a href="#实验报告：" class="headerlink" title="实验报告："></a>实验报告：</h3><p><a href="/shiyan3.pdf">实验报告3.pdf </a></p>
 
     </div>
 
@@ -339,22 +306,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"># Git</a>
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+              <a href="/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%E7%8E%AF%E8%8A%82/" rel="tag"># 信号与系统实践环节</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2020/10/16/%E5%AE%9E%E9%AA%8C2/" rel="prev" title="实验2">
-                  <i class="fa fa-chevron-left"></i> 实验2
+                <a href="/2020/10/29/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" rel="prev" title="搭建hexo博客">
+                  <i class="fa fa-chevron-left"></i> 搭建hexo博客
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/10/23/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/" rel="next" title="信号与系统">
-                  信号与系统 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
